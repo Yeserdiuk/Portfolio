@@ -255,12 +255,10 @@ https://bit.ly/37YsR4A http://bit.ly/47kcMiw
 
         chatButton.addEventListener('click', () => {
             chatContainer.style.display = chatContainer.style.display === 'none' ? 'block' : 'none';
-            chatButton.style.display = 'none';
         });
 
         closeChat.addEventListener('click', () => {
             chatContainer.style.display = 'none';
-            chatButton.style.display = 'block';
         });
 
         function addMessage(message, isUser) {
