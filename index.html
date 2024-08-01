@@ -91,7 +91,7 @@
         #user-input button {
             margin-left: 5px;
             padding: 5px 10px;
-            background-color: #4CAF50;
+            background-color: #0970e5;
             color: white;
             border: none;
             border-radius: 5px;
@@ -294,12 +294,12 @@ https://bit.ly/37YsR4A http://bit.ly/47kcMiw
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    model: 'gpt-4',
+                    model: 'gpt-4o',
                     messages: [
                         {role: 'system', content: `You are an AI assistant that answers questions about the following CV. Only use the information provided in the CV to answer questions. If the information is not in the CV, say you don't have that information. Here's the CV:\n\n${cvText}`},
                         {role: 'user', content: message}
                     ],
-                    max_tokens: 150
+                    max_tokens: 450
                 })
             });
 
