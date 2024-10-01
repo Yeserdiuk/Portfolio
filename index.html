@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Web Portfolio of Yevhenii</title>
-    <script>
-        (function(b,r,a,i,n,y){
-            b.ux=b.ux||function(){(b.ux.q=b.ux.q||[]).push(arguments)};
-            n=r.getElementsByTagName('head')[0]; y=r.createElement('script');y.async=1; y.src=a+i;
-            n.appendChild(y);
-        })(window,document,'https://api.brainybear.ai/cdn/js/bear','.js?id=331');
-    </script>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+        oauth-client-id="INSERT_OAUTH_CLIENT_ID"
+        project-id="heroic-rain-425418-a0"
+        agent-id="87ecc566-f5dd-465e-92b4-ea66bb4b5649"
+        language-code="en"
+        max-query-length="-1"
+        allow-feedback="all">
+        <df-messenger-chat-bubble
+        chat-title="PocoBot">
+    </df-messenger-chat-bubble>
+    </df-messenger>
+    <style>
+        df-messenger {
+        z-index: 999;
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
     <nav class="bg-blue-500 p-4">
